@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link type="text/css" rel="stylesheet" href="grid.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Gemunu+Libre:wght@800&family=Lato:wght@300;400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <body>
+    <div class="grid-container season">
+        <div class="grid-1 animate__animated animate__fadeInLeft">
+            <h1>FPLWEB</h1>
+            <h3>Seasons Current Top Player</h3>
+        </div>        
+        <div class="grid-2 animate__animated animate__fadeInDown">
+            <h1>Next Transfer Deadline</h1>
+        </div>
+        <div class="grid-3 animate__animated animate__fadeInRight">
+        <h2>Saturday, December 02, 2023 at 08:30 AM EST</h2>
+        </div>
+        <div class="grid-4 animate__animated animate__fadeInLeft">
+            <div class="name-num">    
+                <div class="player-details">
+                    <h2 class="team">Liverpool</h2>
+                    <h1 class="first-name">Mohamed</h1>
+                    <h1 class="second-name">Salah</h1>
+                </div>
+                <div class="image-num">
+                    <h1 class="number">11</h1>
+                    <img src="salah2.png" alt="player">
+                </div>
+            </div>
+            <div class="stats"><div><strong class="points"></strong> <span>points</span></div> <div><strong class="goals"></strong> <span>Goals</span></div> <div><strong class="assists"></strong> <span>Assists</span></div></div>
+        </div>
+            <div class="grid-5 animate__animated animate__fadeInRight">
+                <h3>Seasons Top Players</h3>
+            </div>
+            <div class="grid-6 animate__animated animate__fadeInLeft">
+               <h1 class="xGp90"></h1> <h3>xGp90</h3>
+            </div>
+            <div class="grid-7 animate__animated animate__fadeInUp">
+                <h1 class="points-p-90"></h1><h3>PointsP90</h3>
+            </div>
+            <div class="grid-8 animate__animated animate__fadeInUp">8</div>
+            <div class="grid-9 animate__animated animate__fadeInUp">9</div>
+            <div class="grid-10 animate__animated animate__fadeInRight">10</div>
+        </div>
+        <div style="display: none;" class="grid-container form">
+            <div class="grid-1 animate__animated animate__fadeInLeft">
+                <h1>Players on Form</h2>
+                <h3>Last 4 Matches</h3>
+            </div>        
+            <div class="grid-2 animate__animated animate__fadeInDown">
+                <h1>Ranked By</h1>
+            </div>
+            <div class="grid-3 animate__animated animate__fadeInRight">
+                <h1>Points Per 90</h1>
+            </div>
+            <div class="grid-4 animate__animated animate__fadeInLeft">
+                <div class="name-num">    
+                    <div class="player-details">
+                        <h2 class="team">Manchester City</h2>
+                        <h1 class="first-name">Earling</h1>
+                        <h1 class="second-name">Haaland</h1>
+                    </div>
+                    <div class="image-num">
+                        <h1 class="number">9</h1>
+                        <img src="haaland22.png" alt="player">
+                    </div>
+                </div>
+                <div class="stats"><div><strong class="points"></strong> <span>points</span></div> <div><strong class="goals"></strong> <span>Goals</span></div> <div><strong class="assists"></strong> <span>Assists</span></div></div>
+            </div>
+            <div class="grid-5 animate__animated animate__fadeInRight">
+        
+            </div>
+            <div class="grid-6 animate__animated animate__fadeInLeft">
+               <h1 class="xGp90"></h1> <h3>xGp90</h3>
+            </div>
+            <div class="grid-7 animate__animated animate__fadeInUp">
+                <h1 class="points-p-90"></h1><h3>PointsP90</h3>
+            </div>
+            <div class="grid-8 animate__animated animate__fadeInUp">8</div>
+            <div class="grid-9 animate__animated animate__fadeInUp">9</div>
+            <div class="grid-10 animate__animated animate__fadeInRight">10</div>
+        </div>
+        <div style="display: none;" class="league animate__animated animate__fadeInDown">
+            <h1>GEEKY BLINDERS</h1>
+            <div class="league-div"></div>
+        </div>
+
+
+
+    <script>
+       /*  document.addEventListener("DOMContentLoaded", () => {
+            let divs = document.querySelectorAll(".grid-container > div");
+            console.log(divs)
+            divs.forEach((element) => {
+                element.addEventListener('mouseenter', function () {
+                element.classList.add('shaking');
+                element.classList.remove('animate__animated');
+                element.style.overflow = "hidden";
+            });
+
+            element.addEventListener('mouseleave', function () {
+                element.classList.remove('shaking');
+                element.style.overflow = "hidden";
+
+            });
+        });
+
+        })
+         */
+    
+    
+    const topPlayer = {'id': 308, 'web_id': "", 'first_name': 'Mohamed', 'second_name': 'Salah', 'full_name': "", 'webname': 'Salah', 'now_cost': 13.0, 'position': 'MID', 'team_id': 11, 'goals_scored': 10, 'clean_sheets': 4, 'xG': 8.74, 'xA': 3.5, 'xGA': 12.24, 'xGp90': 0.69, 'xAp90': 0.28, 'xGAp90': 0.97, 'xGC': 14.73, 'xP': 97.4, 'xpdiff': 8.6, 'minutes_played': 1134, 'assists': 5, 'yellow_cards': 1, 'red_cards': 0, 'influence': 508.6, 'bp': 14, 'total_points': 106, 'selected': 47.8, 'xgdiff': 1.26, 'xadiff': 1.5, 'xgadiff': 2.76, 'pointsp90': 8.41};
+    const topPlayers = [{'id': 355, 'web_id': "", 'first_name': 'Erling', 'second_name': 'Haaland', 'full_name': "", 'webname': 'Haaland', 'now_cost': 14.0, 'position': 'FWD', 'team_id': 13, 'goals_scored': 14, 'clean_sheets': 4, 'xG': 13.35, 'xA': 0.95, 'xGA': 14.3, 'xGp90': 1.08, 'xAp90': 0.08, 'xGAp90': 1.16, 'xGC': 11.08, 'xP': 96.01, 'xpdiff': 6.99, 'minutes_played': 1114, 'assists': 3, 'yellow_cards': 0, 'red_cards': 0, 'influence': 562.8, 'bp': 15, 'total_points': 103, 'selected': 82.2, 'xgdiff': 0.65, 'xadiff': 2.05, 'xgadiff': 2.7, 'pointsp90': 8.32},
+{'id': 516, 'web_id': "", 'first_name': 'Son', 'second_name': 'Heung-min', 'full_name': "", 'webname': 'Son', 'now_cost': 9.7, 'position': 'MID', 'team_id': 18, 'goals_scored': 8, 'clean_sheets': 4, 'xG': 4.55, 'xA': 2.12, 'xGA': 6.67, 'xGp90': 0.42, 'xAp90': 0.2, 'xGAp90': 0.62, 'xGC': 16.58, 'xP': 65.8, 'xpdiff': 16.2, 'minutes_played': 976, 'assists': 1, 'yellow_cards': 0, 'red_cards': 0, 'influence': 356.8, 'bp': 11, 'total_points': 82, 'selected': 40.5, 'xgdiff': 3.45, 'xadiff': -1.12, 'xgadiff': 2.33, 'pointsp90': 7.56},
+{'id': 60, 'web_id': "", 'first_name': 'Ollie', 'second_name': 'Watkins', 'full_name': "", 'webname': 'Watkins', 'now_cost': 8.5, 'position': 'FWD', 'team_id': 2, 'goals_scored': 6, 'clean_sheets': 2, 'xG': 6.89, 'xA': 1.55, 'xGA': 8.44, 'xGp90': 0.6, 'xAp90': 0.13, 'xGAp90': 0.73, 'xGC': 15.02, 'xP': 64.32, 'xpdiff': 15.68, 'minutes_played': 1040, 'assists': 8, 'yellow_cards': 1, 'red_cards': 0, 'influence': 348.4, 'bp': 9, 'total_points': 80, 'selected': 43.6, 'xgdiff': -0.89, 'xadiff': 6.45, 'xgadiff': 5.56, 'pointsp90': 6.92},
+{'id': 19, 'web_id': "", 'first_name': 'Bukayo', 'second_name': 'Saka', 'full_name': "", 'webname': 'Saka', 'now_cost': 8.7, 'position': 'MID', 'team_id': 1, 'goals_scored': 4, 'clean_sheets': 5, 'xG': 4.15, 'xA': 3.79, 'xGA': 7.94, 'xGp90': 0.36, 'xAp90': 0.33, 'xGAp90': 0.69, 'xGC': 9.73, 'xP': 70.12, 'xpdiff': 8.88, 'minutes_played': 1035, 'assists': 7, 'yellow_cards': 1, 'red_cards': 0, 'influence': 368.8, 'bp': 10, 'total_points': 79, 'selected': 52.5, 'xgdiff': -0.15, 'xadiff': 3.21, 'xgadiff': 3.06, 'pointsp90': 6.87} ]
+    
+    const topFormPlayer = {'id': 355, 'web_id': "none", 'first_name': 'Erling', 'second_name': 'Haaland', 'full_name': "none", 'webname': 'Haaland', 'now_cost': 14.0, 'position': 'FWD', 'team_id': 13, 'goals_scored': 14, 'clean_sheets': 4, 'xG': 13.35, 'xA': 0.95, 'xGA': 14.299999999999999, 'xGp90': 1.08, 'xAp90': 0.08, 'xGAp90': 1.16, 'xGC': 11.08, 'xP': 36.55, 'xpdiff': 3.45, 'minutes_played': 1114, 'assists': 3, 'yellow_cards': 0, 'red_cards': 0, 'influence': 562.8, 'bp': 15, 'total_points': 103, 'selected': 82.2, 'total_minutes': 315, 'total_goals': 5, 'total_assists': 2, 'total_points_all': 40, 'total_pointsp90': 11.43, 'total_xG': 5.24, 'total_xA': 0.53, 'total_xGA': 5.77, 'total_xGp90': 1.5, 'total_xAp90': 0.15, 'total_xGAp90': 1.65, 'total_xGdiff': -0.24, 'total_xAdiff': 1.47, 'total_xGAdiff': 1.23, 'total_bp': 7, 'total_clean_sheets': 0}
+    const topFormPlayers = [{'id': 13, 'web_id': "none", 'first_name': 'Eddie', 'second_name': 'Nketiah', 'full_name': "none", 'webname': 'Nketiah', 'now_cost': 5.7, 'position': 'FWD', 'team_id': 1, 'goals_scored': 5, 'clean_sheets': 6, 'xG': 3.18, 'xA': 0.31, 'xGA': 3.49, 'xGp90': 0.36, 'xAp90': 0.04, 'xGAp90': 0.4, 'xGC': 6.14, 'xP': 12.16, 'xpdiff': 8.84, 'minutes_played': 790, 'assists': 2, 'yellow_cards': 2, 'red_cards': 0, 'influence': 182.4, 'bp': 5, 'total_points': 51, 'selected': 10.2, 'total_minutes': 201, 'total_goals': 3, 'total_assists': 0, 'total_points_all': 21, 'total_pointsp90': 9.4, 'total_xG': 1.15, 'total_xA': 0.03, 'total_xGA': 1.18, 'total_xGp90': 0.51, 'total_xAp90': 0.01, 'total_xGAp90': 0.53, 'total_xGdiff': 1.85, 'total_xAdiff': -0.03, 'total_xGAdiff': 1.82, 'total_bp': 3, 'total_clean_sheets': 0},
+{'id': 678, 'web_id': "none", 'first_name': 'Jérémy', 'second_name': 'Doku', 'full_name': "none", 'webname': 'Doku', 'now_cost': 6.7, 'position': 'MID', 'team_id': 13, 'goals_scored': 2, 'clean_sheets': 0, 'xG': 0.68, 'xA': 2.52, 'xGA': 3.2, 'xGp90': 0.1, 'xAp90': 0.35, 'xGAp90': 0.45, 'xGC': 6.22, 'xP': 13.43, 'xpdiff': 11.57, 'minutes_played': 642, 'assists': 5, 'yellow_cards': 2, 'red_cards': 0, 'influence': 273.6, 'bp': 9, 'total_points': 48, 'selected': 7.8, 'total_minutes': 241, 'total_goals': 1, 'total_assists': 4, 'total_points_all': 25, 'total_pointsp90': 9.34, 'total_xG': 0.3, 'total_xA': 1.19, 'total_xGA': 1.49, 'total_xGp90': 0.11, 'total_xAp90': 0.44, 'total_xGAp90': 0.56, 'total_xGdiff': 0.7, 'total_xAdiff': 2.81, 'total_xGAdiff': 3.51, 'total_bp': 3, 'total_clean_sheets': 0},
+{'id': 260, 'web_id': "none", 'first_name': 'Vitalii', 'second_name': 'Mykolenko', 'full_name': "none", 'webname': 'Mykolenko', 'now_cost': 4.4, 'position': 'DEF', 'team_id': 9, 'goals_scored': 2, 'clean_sheets': 2, 'xG': 0.98, 'xA': 0.34, 'xGA': 1.32, 'xGp90': 0.12, 'xAp90': 0.04, 'xGAp90': 0.17, 'xGC': 8.74, 'xP': 15.77, 'xpdiff': 12.23, 'minutes_played': 717, 'assists': 1, 'yellow_cards': 1, 'red_cards': 0, 'influence': 222.6, 'bp': 6, 'total_points': 42, 'selected': 3.5, 'total_minutes': 270, 'total_goals': 2, 'total_assists': 1, 'total_points_all': 28, 'total_pointsp90': 9.33, 'total_xG': 0.75, 'total_xA': 0.09, 'total_xGA': 0.84, 'total_xGp90': 0.25, 'total_xAp90': 0.03, 'total_xGAp90': 0.28, 'total_xGdiff': 1.25, 'total_xAdiff': 0.91, 'total_xGAdiff': 2.16, 'total_bp': 5, 'total_clean_sheets': 0},
+{'id': 31, 'web_id': "none", 'first_name': 'Oleksandr', 'second_name': 'Zinchenko', 'full_name': "none", 'webname': 'Zinchenko', 'now_cost': 5.0, 'position': 'DEF', 'team_id': 1, 'goals_scored': 1, 'clean_sheets': 5, 'xG': 0.36, 'xA': 1.27, 'xGA': 1.63, 'xGp90': 0.04, 'xAp90': 0.15, 'xGAp90': 0.19, 'xGC': 6.63, 'xP': 20.56, 'xpdiff': 7.44, 'minutes_played': 753, 'assists': 0, 'yellow_cards': 1, 'red_cards': 0, 'influence': 182.4, 'bp': 9, 'total_points': 53, 'selected': 8.1, 'total_minutes': 287, 'total_goals': 1, 'total_assists': 0, 'total_points_all': 28, 'total_pointsp90': 8.78, 'total_xG': 0.08, 'total_xA': 0.9, 'total_xGA': 0.98, 'total_xGp90': 0.03, 'total_xAp90': 0.28, 'total_xGAp90': 0.31, 'total_xGdiff': 0.92, 'total_xAdiff': -0.9, 'total_xGAdiff': 0.02, 'total_bp': 7, 'total_clean_sheets': 1}]
+
+    console.log(topPlayer['goals_scored'])
+    document.querySelector(".goals").textContent = topPlayer['goals_scored']
+    document.querySelector(".points").textContent= topPlayer['total_points']
+    document.querySelector(".assists").textContent = topPlayer['assists']
+    document.querySelector(".points-p-90").textContent = topPlayer['pointsp90']
+    document.querySelector(".xGp90").textContent = topPlayer['xGp90']
+    
+    topPlayers.forEach((player, i) => {
+        let p = document.createElement('p')
+        p.textContent =`${player['webname']} - Goals: ${player['goals_scored']} || Assists: ${player['assists']} || Points: ${player['total_points']} || PointsP90: ${player['pointsp90']} || xGp90: ${player['xGp90']}`
+        document.querySelector(".grid-5").append(p);
+    })
+
+    const league = [
+        [ 1, 325351, 'Alex Mayne', 828 ],
+  [ 2, 5545986, 'Liam Bryson', 746 ],
+  [ 3, 434650, 'Niall-Ryan Sharpe', 737 ],
+  [ 4, 1036538, 'Matteo Giliotti', 736 ],
+  [ 5, 28897, 'Gwyn Liam Llewellyn', 733 ],
+  [ 6, 1779828, 'Kyle Morgan-Nash', 732 ],
+  [ 7, 4980751, 'Tom Webster', 726 ],
+  [ 8, 2439371, 'Evan Lougher', 722 ],
+  [ 9, 3317467, 'Tim Sheaff', 720 ],
+  [ 10, 6727561, 'Gethin Pearce', 715 ],
+  [ 11, 61069, 'Xanthe Maddocks', 715 ],
+  [ 12, 5544726, 'Evan Bryson', 688 ],
+  [ 13, 2920805, 'Simon Astor', 681 ],
+  [ 14, 6178164, 'Angharad Berrow', 564 ]
+]
+
+    document.querySelector(".form .goals").textContent = topFormPlayer['total_goals']
+    document.querySelector(".form .points").textContent= topFormPlayer['total_points_all']
+    document.querySelector(".form .assists").textContent = topFormPlayer['total_assists']
+    document.querySelector(".form .points-p-90").textContent = topFormPlayer['total_pointsp90']
+    document.querySelector(".form .xGp90").textContent = topFormPlayer['total_xGp90']
+
+
+    topFormPlayers.forEach((player, i) => {
+        let p = document.createElement('p')
+        p.textContent =`${player['webname']} - Goals: ${player['goals_scored']} || Assists: ${player['assists']} || Points: ${player['total_points_all']} || PointsP90: ${player['total_pointsp90']} || xGp90: ${player['xGp90']}`
+        document.querySelector(".form .grid-5").append(p);
+    })
+    
+    
+    window.addEventListener("scroll", function(ev) {
+    if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
+        // you're at the bottom of the page
+        document.querySelector('.form').style.display = "grid";
+    }
+    
+    if(document.querySelector('.form').style.display === "grid" && document.querySelector('.league').style.display !== "flex"){
+        if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight) {
+        // you're at the bottom of the page
+        document.querySelector('.league').style.display = "flex";
+        setTimeout(()=> {
+            document.querySelector('.league h1').classList = "animate__animated animate__fadeOut"
+            document.querySelector('.league h1').display = "none"
+            let div = document.querySelector('.league-div');
+            console.log(div);
+            div.style.display = "none"
+            
+            league.forEach((player) => {
+                let playerDiv = document.createElement('div');
+
+                playerDiv.textContent = `${player[0]} - ${player[2]} : ${player[3]}`;
+                div.append(playerDiv);
+            })
+                setTimeout(() => {
+                    
+                    div.style.flexDirection = "column"
+                    div.classList.add('animate__animated')
+                    div.classList.add('animate__fadeIn')
+                    div.style.display = "flex"
+                    div.style.color = "white";
+                }, 1000)
+                
+        
+        }, 2000)
+
+    }}
+
+});
+        
+  
+    
+
+        
+    </script>
+</body>
+</html>
