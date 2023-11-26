@@ -43,7 +43,7 @@ h1, h2, h3{
     justify-content: center;
     font-size: clamp(1.5rem, 2vw, 2.3rem);
     color: black;
-    min-height: 150px;
+    
 }
 
 .grid-2{
@@ -237,18 +237,19 @@ h1, h2, h3{
 }
 
 .league{
-    min-height: 100vh;
+   
     grid-column: span 12;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 3%;
 }
 
 .league h1{
     color: white;
-    font-size: clamp(1.5rem, 5vw, 5.3rem);
+    font-size: clamp(3.5rem, 5vw, 5.3rem);
     
 }
 

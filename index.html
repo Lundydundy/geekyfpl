@@ -183,8 +183,8 @@
         // you're at the bottom of the page
         document.querySelector('.league').style.display = "flex";
         setTimeout(()=> {
-            document.querySelector('.league h1').classList = "animate__animated animate__fadeOut"
-            document.querySelector('.league h1').display = "none"
+           // document.querySelector('.league h1').classList = "animate__animated animate__fadeOut"
+            //document.querySelector('.league h1').display = "none"
             let div = document.querySelector('.league-div');
             console.log(div);
             div.style.display = "none"
@@ -202,10 +202,10 @@
                     div.classList.add('animate__fadeIn')
                     div.style.display = "flex"
                     div.style.color = "white";
-                }, 1000)
+                }, 500)
                 
         
-        }, 2000)
+        }, 1000)
 
     }}
 
