@@ -54,7 +54,7 @@ h1, h2, h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(1rem, 1vw + 1rem, 5rem);
     padding: 2%
 
 
@@ -67,7 +67,7 @@ h1, h2, h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(1rem, 1vw + 1rem, 3rem);
     padding: 2%
 
 }
