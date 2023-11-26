@@ -250,6 +250,7 @@ h1, h2, h3{
 .league h1{
     color: white;
     font-size: clamp(3.5rem, 5vw, 5.3rem);
+    text-align: center;
     
 }
 
